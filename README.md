@@ -11,3 +11,6 @@ I bought and have received a J4125 NUC (8gb RAM / 128gb SSD) with Pfsense pre-in
 
 The next step for me will then be setting up my HomeLab. I am lucky that I have a friend that I can borrow some server-grade hardware to do so, I just need to get myself a cheap server cabinet / rack. I have still yet to decide how I'd like to set up the HomeLab, whether I would set it up with a traditional OS and run some VM's for attack / defence and practicing programs, or whether I would set it up with Dockers to make it easier to run containers like Pi-Hole (Network Ad-Blocker), etc. as well as running some VM's. 
 
+**30/01/2022** - I found some spare time between study to set up the Pfsense NUC, after some trial and error it's all working perfectly. Initially I hadn't changed my router to AP mode so it was also trying to be the DHCP server as well as the Pfsense, easy fix. I've set up 3 VLANS at this stage, home, lab and IOT; all with different rules and permissions. 
+
+I've had a bit of a look through the Pfsense settings and the packages I could test out. I am going to set up pfBlocker (ad blocker) and WireGuard (VPN) at this stage, and when I have the HomeLab set up with dockers I am going to run a Pi-Hole and a different VPN. 
