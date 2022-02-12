@@ -1,9 +1,9 @@
 # Home Network
 A small piece about setting up my first home network. At the time of creating this repository I was / am very new to IT and CyberSecurity, so bear with me if some of my terminology is completely incorrect. I aim to keep my updates as they were so I can see my knowledge and understanding increase over time. 
 
-**07/11/2021** - Initially I was going to create my home Network with a RAID 0 setup for NAS storage, with the purpose of having a safe space to securely save important files and photo's.
+**07/11/2021** - Initially I was going to create my home NAS with a RAID 0 setup for NAS storage, with the purpose of having a safe space to securely save important files and photo's.
 
-After a bit of research and speaking to a few people, I've decided that I will most likely set up the Network as a ZFS file system. Next step is to figure out what I will need to have / buy to set this up properly.
+After a bit of research and speaking to a few people, I've decided that I will most likely set up the NAS as a ZFS file system. Next step is to figure out what I will need to have / buy to set this up properly.
 
 **19/01/2022** - I ended up buying a Synology DS920+ (4 bay NAS) and setting that up with a SHR1 setup (Raid 5) for my NAS, so that I can maximise space but have 1 disc still fail. The setup was incredibly easy to do, and the UI / phone application make it very user friendly. 
 
@@ -14,3 +14,7 @@ The next step for me will then be setting up my HomeLab. I am lucky that I have 
 **30/01/2022** - I found some spare time between study to set up the Pfsense NUC, after some trial and error it's all working perfectly. Initially I hadn't changed my router to AP mode so it was also trying to be the DHCP server as well as the Pfsense, easy fix. I've set up 3 VLANS at this stage, home, lab and IOT; all with different rules and permissions. 
 
 I've had a bit of a look through the Pfsense settings and the packages I could test out. I am going to set up pfBlocker (ad blocker) and WireGuard (VPN) at this stage, and when I have the HomeLab set up with dockers I am going to run a Pi-Hole and a different VPN. 
+
+**12/02/2022** - I've set up pfBlocker (ad blocker) and WireGuard (VPN) within Pfsense, these seem to be working well and I've noticed the lack of ads, especially in one game on my mobile that usually has ads every 3 minutes and I'm getting none whatsoever!
+
+My friend lent me 2x Dell servers to set up at home as my HomeLab, I'll be setting these up sometime over the next few weeks, as I'm currently short a few power (IEC C13) cables. I'm still researching to figure out how I will set up the server, but I am wanting to run some dockers (pi-hole, reverse proxy, etc.) as well as some VM's for practical study and testing without destroying the LAN.
